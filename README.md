@@ -9,6 +9,8 @@ Silicon Labs BGM220 Explorer Kit: https://www.silabs.com/development-tools/wirel
 ## Software Used:
 Simplicity Studio: https://www.silabs.com/developers/simplicity-studio
 blueSPY sniffer software: https://www.rfcreations.com/software/bluespy
+SDK version: Gecko SDK version 4.4.4
+Toolchain version: GNU ARM v12.2.1
 
 ## Tools Used:
 RFcreations mini-moreph: https://www.rfcreations.com/hardware-platform/mini-moreph
