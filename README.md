@@ -23,3 +23,4 @@ RFcreations mini-moreph: https://www.rfcreations.com/hardware-platform/mini-more
 - Bluetooth Assigned Numbers document: https://www.bluetooth.com/specifications/assigned-numbers/
 - Getting Started with Silicon Labs BLE development: https://www.silabs.com/support/training/getting-started-with-bluetooth/bluetooth-software
 - Importing a project into Simplicity Studio v5: https://community.silabs.com/s/article/exporting-importing-a-project-in-simplicity-studio-v4?language=en_US
+- Novel Bits (Bluetooth Low Energy Training): https://novelbits.io
