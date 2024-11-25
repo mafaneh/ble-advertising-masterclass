@@ -11,7 +11,7 @@ Silicon Labs BGM220 Explorer Kit: https://www.silabs.com/development-tools/wirel
 - blueSPY sniffer software: https://www.rfcreations.com/software/bluespy
 
 ## SDK and Toolchain
-- SDK version: Gecko SDK version 4.4.4
+- SDK version: Gecko SDK version 4.4.4/4.4.5
 - Toolchain version: GNU ARM v12.2.1
 
 ## Tools Used:
