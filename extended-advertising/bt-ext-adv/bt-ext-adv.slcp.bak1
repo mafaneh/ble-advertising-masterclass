@@ -1,0 +1,51 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: bt-ext-adv
+label: bt-ext-adv
+description: |
+  This code example demonstrates an advertiser, sending extended advertisements.
+category: Bluetooth Examples
+package: Bluetooth
+quality: development
+readme:
+- {path: readme.md}
+source:
+- {path: app.c}
+- {path: main.c}
+tag: ['hardware:rf:band:2400']
+include:
+- path: .
+  file_list:
+  - {path: app.h}
+sdk: {id: gecko_sdk, version: 4.4.3}
+toolchain_settings: []
+component:
+- {id: EFR32BG22C224F512IM40}
+- {id: app_assert}
+- {id: app_log}
+- {id: bluetooth_feature_connection}
+- {id: bluetooth_feature_extended_advertiser}
+- {id: bluetooth_feature_gatt}
+- {id: bluetooth_feature_gatt_server}
+- {id: bluetooth_feature_legacy_advertiser}
+- {id: bluetooth_feature_scanner}
+- {id: bluetooth_feature_sm}
+- {id: bluetooth_feature_system}
+- {id: bluetooth_stack}
+- {id: bootloader_interface}
+- {id: brd4184b}
+- {id: component_catalog}
+- {id: gatt_configuration}
+- {id: in_place_ota_dfu}
+- {id: iostream_retarget_stdio}
+- instance: [vcom]
+  id: iostream_usart
+- {id: mpu}
+- {id: rail_util_pti}
+configuration:
+- {name: SL_STACK_SIZE, value: '2752'}
+- {name: SL_HEAP_SIZE, value: '9200'}
+- {name: SL_BOARD_ENABLE_VCOM, value: '1'}
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+

@@ -1,0 +1,52 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: bt-per-adv
+label: bt-per-adv
+description: |
+  This example demonstrates the periodic advertising feature of Bluetooth 5 in the advertiser side.
+category: Bluetooth Examples
+package: Bluetooth
+quality: development
+readme:
+- {path: readme.md}
+source:
+- {path: app.c}
+- {path: main.c}
+tag: ['hardware:rf:band:2400']
+include:
+- path: ''
+  file_list:
+  - {path: app.h}
+sdk: {id: gecko_sdk, version: 4.3.2}
+toolchain_settings: []
+component:
+- {id: brd2601b}
+- {id: iostream_retarget_stdio}
+- {id: bluetooth_feature_gatt_server}
+- {id: in_place_ota_dfu}
+- {id: bluetooth_feature_sm}
+- {id: bluetooth_feature_legacy_advertiser}
+- {id: mpu}
+- {id: gatt_configuration}
+- {id: bluetooth_feature_extended_advertiser}
+- {id: bluetooth_stack}
+- {id: rail_util_pti}
+- {id: bluetooth_feature_gatt}
+- {id: bluetooth_feature_periodic_advertiser}
+- {id: app_log}
+- {id: bluetooth_feature_connection}
+- instance: [vcom]
+  id: iostream_usart
+- {id: bluetooth_feature_system}
+- {id: bluetooth_feature_scanner}
+- {id: component_catalog}
+- {id: bootloader_interface}
+- {id: app_assert}
+- {id: EFR32MG24B310F1536IM48}
+configuration:
+- {name: SL_STACK_SIZE, value: '2752'}
+- {name: SL_HEAP_SIZE, value: '9200'}
+- {name: SL_BOARD_ENABLE_VCOM, value: '1'}
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+
